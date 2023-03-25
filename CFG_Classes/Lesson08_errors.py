@@ -34,7 +34,7 @@ except AssertionError as exc:
     print("Yer too old or too young son, away you go")
 
 else:
-    with open("registration_file.txt", 'a+') as file:
+    with open("../venv/registration_file.txt", 'a+') as file:
         file.write("New member name: {} and age {}. \n".format(name, age))
         isSuccessful = True
 
